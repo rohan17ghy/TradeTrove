@@ -22,7 +22,7 @@ export default function Sidebar({ isSidebarOpen }: SidebarProps) {
             </Button>
           </div> */}
           <Input type="text" placeholder="Search" className="mb-2 h-7 text-xs bg-[#222222] border-zinc-700 text-zinc-100 placeholder-zinc-400" />
-          <WatchlistTable data={watchlistData} />
+          <WatchlistTable initialData={watchlistData} />
         </div>
       </ScrollArea>
     </aside>
