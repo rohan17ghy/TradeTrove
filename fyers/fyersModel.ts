@@ -25,6 +25,7 @@ async function refreshAccessToken() {
 
 const fyersModel = new fyersAPI.FyersModel();
 refreshAccessToken();
+fyersModel.setAppId(process.env.APP_ID);
 fyersModel.setAccessToken(process.env.ACCESS_TOKEN);
 
 export default fyersModel;
