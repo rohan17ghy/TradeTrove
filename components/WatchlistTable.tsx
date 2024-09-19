@@ -7,15 +7,18 @@ import { WatchlistItem } from '@/app/types';
 import { BarChart2, Trash2, MoreHorizontal } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
-const DragDropContext = dynamic(() => import('react-beautiful-dnd').then(mod => mod.DragDropContext), { ssr: false });
-const Droppable = dynamic(() => import('react-beautiful-dnd').then(mod => mod.Droppable), { ssr: false });
-const Draggable = dynamic(() => import('react-beautiful-dnd').then(mod => mod.Draggable), { ssr: false });
+import { DragDropContext, Droppable, Draggable, } from 'react-beautiful-dnd';
+
+// const DragDropContext = dynamic(() => import('react-beautiful-dnd').then(mod => mod.DragDropContext), { ssr: false });
+// const Droppable = dynamic(() => import('react-beautiful-dnd').then(mod => mod.Droppable), { ssr: false });
+// const Draggable = dynamic(() => import('react-beautiful-dnd').then(mod => mod.Draggable), { ssr: false });
 
 interface WatchlistTableProps {
   initialData: WatchlistItem[];
 }
 
 // Strict mode fix for react-beautiful-dnd
+// https://medium.com/@wbern/getting-react-18s-strict-mode-to-work-with-react-beautiful-dnd-47bc909348e4
 const StrictModeDroppable = ({ children, ...props }: any) => {
   const [enabled, setEnabled] = useState(false);
   useEffect(() => {
