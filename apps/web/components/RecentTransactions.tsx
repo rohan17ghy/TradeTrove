@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { recentTransactionsData } from '@/app/lib/data'
+import { recentTransactionsData } from '@/apps/web/app/lib/data'
 
 interface Transaction {
   id: string;

@@ -2,7 +2,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import HoldingsTable from './HoldingsTable'
 import { MarketOverview } from './MarketOverview'
 import { RecentTransactions } from './RecentTransactions'
-import { holdingsData } from '@/app/lib/data'
+import { holdingsData } from '@/apps/web/app/lib/data'
 
 export default function Dashboard() {
   return (

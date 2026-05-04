@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import dynamic from 'next/dynamic';
 import { Table, TableBody, TableRow, TableCell } from "@/components/ui/table";
-import { WatchlistItem } from '@/app/types';
+import { WatchlistItem } from '@/apps/web/app/types';
 import { BarChart2, Trash2, MoreHorizontal } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 

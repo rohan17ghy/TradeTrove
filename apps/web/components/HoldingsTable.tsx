@@ -1,5 +1,5 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { HoldingsItem } from '@/app/types'
+import { HoldingsItem } from '@/apps/web/app/types'
 
 interface HoldingsTableProps {
   data: HoldingsItem[];

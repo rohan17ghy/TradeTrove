@@ -16,6 +16,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "fyers-api-v3": "^1.3.1",
+    "fyers-sdk": "file:C:\\Harkirat\\fyers-sdk\\",
     "lucide-react": "^0.441.0",
     "next": "14.2.11",
     "react": "^18",

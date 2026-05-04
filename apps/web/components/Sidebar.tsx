@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import WatchlistTable from './WatchlistTable'
-import { watchlistData } from '@/app/lib/data'
+import { watchlistData } from '@/apps/web/app/lib/data'
 
 interface SidebarProps {
   isSidebarOpen: boolean;
